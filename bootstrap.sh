@@ -6,7 +6,7 @@
 # change source mirror
 cd /etc/apt/
 mv sources.list sources.list.bak
-bash -c "cat /vagrant/sources.list.aliyun ./sources.list.bak > sources.list"
+bash -c "cat /vagrant/sources.list.mirror sources.list.bak > sources.list"
 apt-get update -y
 apt-get upgrade -y
 

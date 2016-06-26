@@ -7,11 +7,6 @@ Vagrantfile
 
 * `Vagrantfile`：Vagrant 的配置文件
 * `bootstrap.sh`：镜像初始化后自动运行的脚本
-* `source.list.aliyun`：阿里云的源
+* `source.list.mirror`：源镜像服务器
 
-环境版本：
-
-```
-Vagrant 1.8.4
-VirtualBox 5.0.22
-```
+环境版本：`Vagrant 1.8.*`, `VirtualBox 5.0.*`
