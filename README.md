@@ -18,7 +18,10 @@ Vagrantfile
 * `nginx/*`：Typecho、WordPress 的 nginx 的参考配置文件
 
 
-## 链接数据库报错 Access denied
+## 常见问题
+
+
+### 链接数据库报错 Access denied
 
 > Access denied for user 'root'@'localhost' (using password: YES)
 
@@ -43,7 +46,7 @@ $ sudo service mysql restart
 方法来源 <https://stackoverflow.com/a/35748657/620935>
 
 
-## 静态文件缓存无法实时刷新
+### 修改静态文件无法实时刷新
 
 这是 VirtualBox 的一个 BUG，需要修改 nginx.conf 文件：
 
