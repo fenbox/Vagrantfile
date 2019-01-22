@@ -3,6 +3,10 @@
 # Add the code to Vagrantfile
 # config.vm.provision :shell, path: "bootstrap.sh"
 
+echo "--------------------------"
+echo " Upgdate & Upgrade System "
+echo "--------------------------"
+
 # change source mirror
 mv /etc/apt/sources.list /etc/apt/sources.list.bak
 cp /vagrant/sources.list /etc/apt/
@@ -10,30 +14,37 @@ cp /vagrant/sources.list /etc/apt/
 apt-get update -y
 apt-get upgrade -y
 
-cd /vagrant/
 
-
-# NGINX
+echo "---------------"
+echo " Install NGINX "
+echo "---------------"
 apt install -y nginx
 
 
-# MariaDB
+echo "-----------------"
+echo " Install MariaDB "
+echo "-----------------"
 apt install -y mariadb-server php-mysql
+
 # mysql -u root
 # \q
 # mysql_secure_installation
 # Y for all
 
 
-# PHP
+echo "-------------"
+echo " Install PHP "
+echo "-------------"
 apt install -y php-fpm
 
 
-# Sites
-cp /vagrant/nginx/typecho.conf /etc/nginx/sites-available/
+echo "-----------------"
+echo " Initialize Site "
+echo "-----------------"
+cp /vagrant/nginx/typecho.conf   /etc/nginx/sites-available/
 cp /vagrant/nginx/wordpress.conf /etc/nginx/sites-available/
 
-ln -s /etc/nginx/sites-available/typecho.conf /etc/nginx/sites-enabled/
+ln -s /etc/nginx/sites-available/typecho.conf   /etc/nginx/sites-enabled/
 ln -s /etc/nginx/sites-available/wordpress.conf /etc/nginx/sites-enabled/
 
 nginx -s reload

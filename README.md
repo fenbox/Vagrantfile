@@ -1,7 +1,7 @@
 Vagrantfile
 ===========
 
-这是一个 LEMP/LNMP 的 Vagrant 开发环境，可以运行 Typecho、WordPress 等程序。环境配置根据 [Linode](https://www.linode.com/docs/web-servers/lemp/how-to-install-a-lemp-server-on-ubuntu-18-04/) 官方教程搭建。
+这是一个基于 Ubuntu 18.04 LTS 的 Vagrant LEMP/LNMP 开发环境，可以运行 Typecho、WordPress 等程序。环境配置根据 [Linode](https://www.linode.com/docs/web-servers/lemp/how-to-install-a-lemp-server-on-ubuntu-18-04/) 官方教程搭建。
 
 本配置在 `Vagrant 2.2.*`，虚拟机为 `VirtualBox 6.0.*` 下测试通过。安装步骤：
 
