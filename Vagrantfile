@@ -51,7 +51,7 @@ Vagrant.configure("2") do |config|
   #   vb.gui = true
   #
   #   # Customize the amount of memory on the VM:
-    vb.name = "vagrant_ubuntu18_lnmp"
+    vb.name = "vagrant_ubuntu18_vb"
     vb.memory = "1024"
   end
   #
