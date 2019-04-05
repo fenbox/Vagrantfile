@@ -41,11 +41,8 @@ apt install -y php-fpm
 echo "-----------------"
 echo " Initialize Site "
 echo "-----------------"
-cp /vagrant/nginx/typecho.conf   /etc/nginx/sites-available/
-cp /vagrant/nginx/wordpress.conf /etc/nginx/sites-available/
-
-ln -s /etc/nginx/sites-available/typecho.conf   /etc/nginx/sites-enabled/
-ln -s /etc/nginx/sites-available/wordpress.conf /etc/nginx/sites-enabled/
+cp /vagrant/nginx/*.conf   /etc/nginx/sites-available/
+ln -s /etc/nginx/sites-available/*.conf   /etc/nginx/sites-enabled/
 
 nginx -s reload
 nginx -t
