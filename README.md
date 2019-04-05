@@ -6,7 +6,7 @@ Vagrantfile
 本配置在 `Vagrant 2.2.*`，虚拟机为 `VirtualBox 6.0.*` 下测试通过。安装步骤：
 
 1. 安装 [VirtualBox](https://www.virtualbox.org/wiki/Downloads) 虚拟机及 [Vagrant](https://www.vagrantup.com/downloads.html) 程序
-2. 添加 box 镜像 `vagrant box add bento/ubuntu-18.04`，选择 `virtualbox`
+2. 添加 box 镜像 `vagrant box add ubuntu/bionic64`，选择 `virtualbox`
 4. 执行建立环境 `vagrant up`
 
 
